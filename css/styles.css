@@ -3,7 +3,6 @@
 /* =============================================================================
 FRAMEWORK - RESET - All colors used in theme
 ========================================================================== */
-@import url("//fonts.googleapis.com/css?family=Lato:400,300,700,400italic,700italic,900");
 html,
 body,
 div,
@@ -143,14 +142,15 @@ GLOBAL - GENERAL - Defualt HTML elements
 body {
   font-size: 15px;
   line-height: 25px;
-  font-family: 'lato', sans-serif;
-  color: #323232;
+  font-family: arial, sans-serif;
+  color: #191919;
 }
 p {
-  color: #323232;
+  color: #191919;
   font-size: 15px;
   line-height: 25px;
   font-family: inherit;
+  margin-bottom: 10px;
 }
 p p {
   font-size: 15px;
@@ -192,14 +192,14 @@ u {
 h1 {
   font-size: 34px;
   line-height: 1.25em;
-  color: #891a1a;
+  color: #cc181f;
   font-weight: normal;
 }
 .h2,
 h2 {
   font-size: 22px;
   line-height: 30px;
-  color: #891a1a;
+  color: #cc181f;
   font-weight: bold;
 }
 .h3,
@@ -309,7 +309,7 @@ tbody tr:last-of-type {
  ========================================================================== */
 .grid-defualts,
 .split-defualts,
-.col-4,
+.col-12,
 .spl-6 {
   border: 0px solid rgba(0, 0, 0, 0);
   float: left;
@@ -339,8 +339,8 @@ tbody tr:last-of-type {
   float: off;
   font-size: 15px;
   line-height: 25px;
-  font-family: 'lato', sans-serif;
-  color: #323232;
+  font-family: arial, sans-serif;
+  color: #191919;
 }
 .spl-center {
   text-align: center;
@@ -351,50 +351,122 @@ tbody tr:last-of-type {
 /* =============================================================================
  FRAMEWORK - GRID - All framework styles for Grid settings
  ========================================================================== */
-.col-4.span-4 {
+.col-12.span-12 {
   width: 100%;
 }
-.col-4.offset-4 {
-  margin-left: 108%;
-}
-.col-4.offset-4:first-child {
+.col-12.offset-12 {
   margin-left: 104%;
 }
-.col-4.span-3 {
-  width: 74%;
+.col-12.offset-12:first-child {
+  margin-left: 102%;
 }
-.col-4.offset-3 {
-  margin-left: 82%;
+.col-12.span-11 {
+  width: 91.5%;
 }
-.col-4.offset-3:first-child {
-  margin-left: 78%;
+.col-12.offset-11 {
+  margin-left: 95.5%;
 }
-.col-4.span-2 {
-  width: 48%;
+.col-12.offset-11:first-child {
+  margin-left: 93.5%;
 }
-.col-4.offset-2 {
-  margin-left: 56%;
+.col-12.span-10 {
+  width: 83%;
 }
-.col-4.offset-2:first-child {
-  margin-left: 52%;
+.col-12.offset-10 {
+  margin-left: 87%;
 }
-.col-4.span-1 {
-  width: 22%;
+.col-12.offset-10:first-child {
+  margin-left: 85%;
 }
-.col-4.offset-1 {
-  margin-left: 30%;
+.col-12.span-9 {
+  width: 74.5%;
 }
-.col-4.offset-1:first-child {
-  margin-left: 26%;
+.col-12.offset-9 {
+  margin-left: 78.5%;
 }
-.col-4 {
-  margin-left: 4%;
+.col-12.offset-9:first-child {
+  margin-left: 76.5%;
 }
-.col-4:first-child {
+.col-12.span-8 {
+  width: 66%;
+}
+.col-12.offset-8 {
+  margin-left: 70%;
+}
+.col-12.offset-8:first-child {
+  margin-left: 68%;
+}
+.col-12.span-7 {
+  width: 57.5%;
+}
+.col-12.offset-7 {
+  margin-left: 61.5%;
+}
+.col-12.offset-7:first-child {
+  margin-left: 59.5%;
+}
+.col-12.span-6 {
+  width: 49%;
+}
+.col-12.offset-6 {
+  margin-left: 53%;
+}
+.col-12.offset-6:first-child {
+  margin-left: 51%;
+}
+.col-12.span-5 {
+  width: 40.5%;
+}
+.col-12.offset-5 {
+  margin-left: 44.5%;
+}
+.col-12.offset-5:first-child {
+  margin-left: 42.5%;
+}
+.col-12.span-4 {
+  width: 32%;
+}
+.col-12.offset-4 {
+  margin-left: 36%;
+}
+.col-12.offset-4:first-child {
+  margin-left: 34%;
+}
+.col-12.span-3 {
+  width: 23.5%;
+}
+.col-12.offset-3 {
+  margin-left: 27.5%;
+}
+.col-12.offset-3:first-child {
+  margin-left: 25.5%;
+}
+.col-12.span-2 {
+  width: 15%;
+}
+.col-12.offset-2 {
+  margin-left: 19%;
+}
+.col-12.offset-2:first-child {
+  margin-left: 17%;
+}
+.col-12.span-1 {
+  width: 6.5%;
+}
+.col-12.offset-1 {
+  margin-left: 10.5%;
+}
+.col-12.offset-1:first-child {
+  margin-left: 8.5%;
+}
+.col-12 {
+  margin-left: 2%;
+}
+.col-12:first-child {
   margin-left: 0;
 }
 @media screen and (max-width: 480px) {
-  .col-4 {
+  .col-12 {
     width: 100% !important;
     float: off !important;
     margin-left: 0 !important;
@@ -423,7 +495,7 @@ FRAMEWORK - LAYOUT - Generic layout styling mixin's and extensions
   min-width: 0;
 }
 .group {
-  max-width: 1300px;
+  max-width: 961px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -465,10 +537,10 @@ FRAMEWORK - LAYOUT - Generic layout styling mixin's and extensions
   margin-right: 0;
 }
 .m-bt-grid {
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 .m-tp-grid {
-  margin-top: 4%;
+  margin-top: 2%;
 }
 .inline-block,
 .inline-block-all {
@@ -1725,8 +1797,15 @@ FRAMEWORK - BUTTONS - Buttons Styling
 /* =============================================================================
 FRAMEWORK - TYPE - Typographic mixin, extensions and settings
 ========================================================================== */
+@font-face {
+  font-family: "aldo";
+  src: url("..//fonts/aldo/aldo.eot");
+  src: url("..//fonts/aldo/aldo.eot?#iefix") format("embedded-opentype"), url("..//fonts/aldo/aldo.woff") format("woff"), url("..//fonts/aldo/aldo.ttf") format("truetype"), url("..//fonts/aldo/aldo.svg#aldo/aldo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 .sans-serif {
-  font-family: 'lato', sans-serif;
+  font-family: arial, sans-serif;
 }
 .serif {
   font-family: Georgia, serif;
@@ -2091,12 +2170,198 @@ GLOBAL - ELEMENTS - Standard elements reused in site
 /* =============================================================================
 GLOBAL - Footers
 =========================================================================== */
+footer,
+.site-footer {
+  *zoom: 1;
+}
+footer:before,
+.site-footer:before,
+footer:after,
+.site-footer:after {
+  content: "";
+  display: table;
+}
+footer:after,
+.site-footer:after {
+  clear: both;
+}
 /* =============================================================================
 GLOBAL - Headers
 =========================================================================== */
+header,
+.site-header {
+  *zoom: 1;
+}
+header:before,
+.site-header:before,
+header:after,
+.site-header:after {
+  content: "";
+  display: table;
+}
+header:after,
+.site-header:after {
+  clear: both;
+}
+.header-top {
+  height: 20px;
+  *zoom: 1;
+}
+.header-top:before,
+.header-top:after {
+  content: "";
+  display: table;
+}
+.header-top:after {
+  clear: both;
+}
+.header-main {
+  *zoom: 1;
+}
+.header-main:before,
+.header-main:after {
+  content: "";
+  display: table;
+}
+.header-main:after {
+  clear: both;
+}
+.header-main .logo a {
+  padding-left: 15px;
+  display: block;
+}
+.header-top-links {
+  position: relative;
+}
+.header-top-links a.main-link {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  background-color: #000000;
+  padding: 0px 18px 2px 45px;
+  color: #8c8c8b;
+  border-bottom: 1px solid #191919;
+  border-left: 1px solid #191919;
+  border-right: 1px solid #191919;
+  font-size: 14px;
+  font-family: 'aldo', sans-serif;
+  -webkit-border-radius: 0 0 0 10px;
+  border-radius: 0 0 0 10px;
+}
+.header-top-links a.main-link:hover {
+  background-color: #191919;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
+  right: -1px;
+}
+.header-top-links a.main-link:after {
+  position: absolute;
+  top: 4px;
+  left: 18px;
+  content: ' ';
+  display: block;
+  width: 16px;
+  height: 17px;
+  background-image: url("/images/common/header_rss_btn.gif");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center center;
+}
+.nav-main .nav-main-list {
+  text-align: right;
+}
+.nav-main li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding-top: 39px;
+}
+.nav-main li a {
+  padding: 0px 20px;
+  font-family: 'aldo', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+}
+.nav-main li a:hover {
+  color: #cc181f;
+}
+.nav-main li.active a {
+  color: #cc181f;
+}
 /* =============================================================================
 GLOBAL - Menus
 =========================================================================== */
 /* =============================================================================
 GLOBAL - LAYOUT - Common Layout Styling
 =========================================================================== */
+body {
+  background-image: url("/images/common/bg_body.jpg");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: auto auto;
+}
+.bg_content_wrap_1 {
+  background-image: url("/images/common/bg_swirl_pattern.jpg");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+  overflow: hidden;
+  background-color: #000000;
+}
+.bg_content_wrap_2 {
+  background-image: url("/images/common/bg_body_bottom_gradient.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center bottom;
+  min-height: 640px;
+  overflow: hidden;
+}
+.site-content {
+  *zoom: 1;
+}
+.site-content:before,
+.site-content:after {
+  content: "";
+  display: table;
+}
+.site-content:after {
+  clear: both;
+}
+/* =============================================================================
+PARTIAL - LAYOUT - Home Layout Styling
+=========================================================================== */
+.titlearea-home {
+  margin-top: 15px;
+  background-image: url("/images/home/bg_home_titlearea_grad.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  padding: 60px 45px 0px;
+}
+.titlearea-home h1 {
+  font-family: 'aldo', sans-serif;
+  color: #8c8c8b;
+  font-size: 53px;
+  line-height: 33px;
+}
+.titlearea-home h2 {
+  font-family: 'aldo', sans-serif;
+  color: #b2b2b2;
+  font-size: 23px;
+  line-height: 23px;
+  padding-bottom: 15px;
+  margin-top: -3px;
+}
+.titlearea-home p {
+  color: #e6e6e5;
+  font-size: 13px;
+  line-height: 22px;
+}
+.titlearea-home a {
+  color: #cccccb;
+}
