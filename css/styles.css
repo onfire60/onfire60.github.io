@@ -491,11 +491,11 @@ tbody tr:last-of-type {
 FRAMEWORK - LAYOUT - Generic layout styling mixin's and extensions
 ===========================================================================*/
 .section {
-  padding: 0 6% 0 6%;
+  padding: 0 4% 0 4%;
   min-width: 0;
 }
 .group {
-  max-width: 961px;
+  max-width: 941px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2173,6 +2173,12 @@ GLOBAL - Footers
 footer,
 .site-footer {
   *zoom: 1;
+  min-height: 200px;
+  background-image: url("/images/common/bg_footer_top.jpg");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
 }
 footer:before,
 .site-footer:before,
@@ -2184,6 +2190,58 @@ footer:after,
 footer:after,
 .site-footer:after {
   clear: both;
+}
+footer .black_canvas,
+.site-footer .black_canvas {
+  background-image: url("/images/common/bg_footer.jpg");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+  margin-top: 2px;
+  padding-top: 15px;
+}
+.footer-nav-main-list {
+  clear: both;
+}
+.footer-nav-main-list li {
+  padding-top: 15px;
+  float: left;
+}
+.footer-nav-main-list li a {
+  display: inline-block;
+  color: #808080;
+  font-size: 13px;
+}
+.footer-nav-main-list li span {
+  display: inline-block;
+  color: #808080;
+  font-size: 15px;
+  padding: 0 14px;
+}
+.footer-left p {
+  padding-top: 5px;
+  clear: both;
+  color: #4c4c4c;
+  float: left;
+  font-size: 12px;
+}
+.footer_logo {
+  float: right;
+}
+.footer_logo a {
+  display: block;
+  width: 201px;
+  height: 71px;
+  background-image: url("/images/common/logo_grey.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center bottom;
+  text-indent: -9999px;
+}
+.footer_logo a:hover {
+  background-position: center top;
 }
 /* =============================================================================
 GLOBAL - Headers
@@ -2332,10 +2390,60 @@ body {
 .site-content:after {
   clear: both;
 }
+#content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.paper-wrap .paper-torn-top {
+  padding-top: 46px;
+  background-image: url("/images/common/content-paper-torn-top.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+}
+.paper-wrap .content-paper-bg {
+  background-image: url("/images/common/content-paper-bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+  background-color: #a9a9a9;
+}
+.paper-wrap .content-paper-top {
+  background-image: url("/images/common/content-paper-top.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+}
+.paper-wrap .content-paper-bottom {
+  background-image: url("/images/common/content-paper-bottom.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center bottom;
+}
+.c2col-sr.span-8 {
+  background-image: url("/images/common/bg_content-sep.gif");
+  background-repeat: repeat-y;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: right bottom;
+}
+.c2col-sr.span-4 {
+  background-image: url("/images/common/bg_content_sidebar_tear.gif");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: left top;
+}
 /* =============================================================================
 PARTIAL - LAYOUT - Home Layout Styling
 =========================================================================== */
 .titlearea-home {
+  margin-bottom: 30px;
+}
+.titlearea-home .titlearea-home-wrap {
   margin-top: 15px;
   background-image: url("/images/home/bg_home_titlearea_grad.png");
   background-repeat: repeat-x;
