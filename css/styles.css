@@ -223,7 +223,7 @@ img {
 }
 a {
   text-decoration: none;
-  color: blue;
+  color: #9f1318;
 }
 form {
   margin: 0;
@@ -1417,13 +1417,13 @@ GLOBAL - ELEMENTS - Common elements (Borders, Boxes, Etc)
   z-index: 1;
 }
 .links a:visited {
-  color: BlueViolet;
+  color: #9f1318;
 }
 .links a:hover {
-  color: orange;
+  color: #ff0008;
 }
 .links-hover a:hover {
-  color: orange;
+  color: #ff0008;
 }
 .list-bullet {
   list-style: none outside;
@@ -1782,14 +1782,14 @@ FRAMEWORK - BUTTONS - Buttons Styling
 }
 .btn-clear {
   background-color: transparent;
-  color: blue;
+  color: #9f1318;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .btn-clear:hover {
   background-color: transparent;
-  color: orange;
+  color: #ff0008;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2167,6 +2167,194 @@ Print Styles
 /* =============================================================================
 GLOBAL - ELEMENTS - Standard elements reused in site
 =========================================================================== */
+.paper-wrap .paper-torn-top {
+  padding-top: 46px;
+  background-image: url("/images/common/content-paper-torn-top.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+}
+.paper-wrap .content-paper-bg {
+  background-image: url("/images/common/content-paper-bg.gif");
+  background-repeat: repeat;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+  background-color: #a9a9a9;
+}
+.paper-wrap .content-paper-top {
+  background-image: url("/images/common/content-paper-top.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+}
+.paper-wrap .content-paper-bottom {
+  background-image: url("/images/common/content-paper-bottom.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center bottom;
+}
+.titlearea-small {
+  margin-bottom: 15px;
+}
+.titlearea-small .titlearea-small-wrap {
+  margin-top: 15px;
+  background-image: url("/images/common/titlearea-small.png");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  padding: 45px 45px 0px;
+}
+.titlearea-small h1 {
+  font-family: 'aldo', sans-serif;
+  color: #8c8c8b;
+  font-size: 53px;
+  line-height: 33px;
+}
+.titlearea-small h2 {
+  font-family: 'aldo', sans-serif;
+  color: #b2b2b2;
+  font-size: 23px;
+  line-height: 23px;
+  padding-bottom: 15px;
+  margin-top: -3px;
+}
+.sidebar-block {
+  margin-bottom: 20px;
+}
+.sidebar-block h3.sidebar-block-title {
+  display: block;
+  height: 23px;
+  background-image: url("/images/common/bg_sidebar_block_header.gif");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: left center;
+  position: relative;
+}
+.sidebar-block h3.sidebar-block-title span {
+  position: absolute;
+  top: 4px;
+  left: 27px;
+  z-index: 1;
+  font-family: 'aldo', sans-serif;
+  color: #b2b2b2;
+  font-size: 16px;
+  line-height: 17px;
+  color: #333;
+}
+.sidebar-block h3.sidebar-block-title:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 154px;
+  height: 23px;
+  background-image: url("/images/common/bg_sidebar_block_header.gif");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: left top;
+}
+.sidebar-block h3.sidebar-block-title:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 96px;
+  height: 23px;
+  background-image: url("/images/common/bg_sidebar_block_header.gif");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: right bottom;
+}
+.sb-block-paper-list .sb-block-top {
+  margin-top: 10px;
+  background-image: url("/images/common/sidebar_paper_list_top.gif");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+  padding-top: 5px;
+}
+.sb-block-paper-list .sb-block-bottom {
+  background-image: url("/images/common/sidebar_paper_list_bottom.gif");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center bottom;
+  padding-bottom: 5px;
+}
+.sb-block-paper-list .sb-block-middle {
+  background-image: url("/images/common/sidebar_paper_list_middle.gif");
+  background-repeat: repeat;
+  background-size: auto auto;
+  background-position: left top;
+}
+.sb-block-paper-list .sb-block-middle-left {
+  background-image: url("/images/common/sidebar_paper_list_middle-left.gif");
+  background-repeat: repeat-y;
+  background-size: auto auto;
+  background-position: left top;
+}
+.sb-block-paper-list .sb-block-middle-right {
+  background-image: url("/images/common/sidebar_paper_list_middle-right.gif");
+  background-repeat: repeat-y;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: right top;
+}
+.sb-block-paper-list .sb-block-content {
+  background-image: url("/images/common/sidebar_paper_list_divider.gif");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center top;
+}
+.sb-block-paper-list ul {
+  display: block;
+  overflow: hidden;
+}
+.sb-block-paper-list ul li {
+  display: block;
+  overflow: hidden;
+  background-image: url("/images/common/sidebar_paper_list_divider.gif");
+  background-repeat: repeat-x;
+  background-position: left top;
+  background-size: auto auto;
+  background-position: center bottom;
+  padding: 2px 5px;
+}
+.sb-block-paper-list ul li a {
+  display: block;
+  overflow: hidden;
+  padding: 5px 0 2px;
+}
+.sb-block-paper-list ul li a span.social-icon {
+  float: left;
+  display: block;
+  height: 25px;
+  margin: 0 18px 0 10px;
+  width: 25px;
+}
+.sb-block-paper-list ul li a span.social-name {
+  font-family: 'aldo', sans-serif;
+  float: left;
+  font-size: 23px;
+  padding: 3px 0;
+  color: #545454;
+}
+.sb-block-paper-list ul li a:hover {
+  background-color: #808080;
+}
+.sb-block-paper-list ul li a:hover span.social-name {
+  color: #3b3b3b;
+}
 /* =============================================================================
 GLOBAL - Footers
 =========================================================================== */
@@ -2394,48 +2582,28 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.paper-wrap .paper-torn-top {
-  padding-top: 46px;
-  background-image: url("/images/common/content-paper-torn-top.png");
-  background-repeat: repeat-x;
-  background-position: left top;
-  background-size: auto auto;
-  background-position: center top;
+.c2col-sr {
+  min-height: 400px;
+  padding-bottom: 60px;
 }
-.paper-wrap .content-paper-bg {
-  background-image: url("/images/common/content-paper-bg.gif");
-  background-repeat: repeat;
-  background-position: left top;
-  background-size: auto auto;
-  background-position: center top;
-  background-color: #a9a9a9;
-}
-.paper-wrap .content-paper-top {
-  background-image: url("/images/common/content-paper-top.png");
-  background-repeat: repeat-x;
-  background-position: left top;
-  background-size: auto auto;
-  background-position: center top;
-}
-.paper-wrap .content-paper-bottom {
-  background-image: url("/images/common/content-paper-bottom.png");
-  background-repeat: repeat-x;
-  background-position: left top;
-  background-size: auto auto;
-  background-position: center bottom;
-}
-.c2col-sr.span-8 {
+.c2col-sr.span-4 {
   background-image: url("/images/common/bg_content-sep.gif");
   background-repeat: repeat-y;
   background-position: left top;
   background-size: auto auto;
   background-position: right bottom;
 }
-.c2col-sr.span-4 {
+.c2col-sr.span-2 {
   background-image: url("/images/common/bg_content_sidebar_tear.gif");
   background-repeat: no-repeat;
-  background-size: auto auto;
   background-position: left top;
+  background-size: auto auto;
+  background-position: 5px top;
+}
+.c2col-sr.span-2 .sidebar-block {
+  width: 90%;
+  float: right;
+  clear: both;
 }
 /* =============================================================================
 PARTIAL - LAYOUT - Home Layout Styling
@@ -2472,4 +2640,31 @@ PARTIAL - LAYOUT - Home Layout Styling
 }
 .titlearea-home a {
   color: #cccccb;
+}
+ul.about-sections {
+  padding-right: 40px;
+}
+li.about-section {
+  padding-bottom: 20px;
+}
+li.about-section h3.section_title {
+  background-image: url("/images/common/bg_body_titlebar.jpg");
+  background-repeat: repeat-y;
+  background-size: auto auto;
+  background-position: left top;
+  display: block;
+  height: 23px;
+  margin: 0 0 15px;
+  overflow: hidden;
+}
+li.about-section h3.section_title span {
+  color: #cccccc;
+  font-family: 'aldo', sans-serif;
+  display: block;
+  font-size: 16px;
+  margin: 0 0 0 11px;
+}
+li.about-section img.about_image {
+  float: left;
+  margin: 5px 25px 5px 0;
 }
