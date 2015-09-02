@@ -1,7 +1,19 @@
 //=======================
 // Global Variables
 //=======================
-var GLOBALVARIABLESHERE;
+
+//Featured Slider Global Vars
+var slideHeight = 50;
+var slideWidth = 50;
+var slidespeed = 2000;
+var textsspeed = 1500;
+var slideImages = $('.featured-work-large .featured-images .featured-image');
+var slideTexts = $('.featured-work-large .featured-texts .featured-text');
+var controlBtns = $('.featured-work-large .controls-list .control-button');
+var slideTextsVisible = true;
+
+Cufon.replace('.cufon-txt-1', {color: '-linear-gradient(#e5e5e5, #999999)'});
+Cufon.now();
 
 (function ($) {
 
@@ -25,5 +37,6 @@ var GLOBALVARIABLESHERE;
             console[method] = noop;
         }
     }
+
 
 })(jQuery);
