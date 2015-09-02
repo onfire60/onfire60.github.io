@@ -15,9 +15,6 @@ var slideTextsVisible = true;
 Cufon.replace('.cufon-txt-1', {color: '-linear-gradient(#e5e5e5, #999999)'});
 Cufon.now();
 
-Cufon.replace('.cufon-txt-1', {color: '-linear-gradient(#e5e5e5, #999999)'});
-Cufon.now();
-
 (function ($) {
 
     // Avoid `console` errors in browsers that lack a console.
