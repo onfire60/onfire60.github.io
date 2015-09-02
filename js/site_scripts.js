@@ -23,10 +23,10 @@
     //~~~~~~~~~~~~~~~~~~~~
     // All Function Calls
     //~~~~~~~~~~~~~~~~~~~~
-    // Sets Elements in the same row to have equal heights
-    $(this).equalHeight('.equalheight');
     //Sets the featured work scroller vars
     $(this).featuredWorkScrollerSetVars();
+    // Sets Elements in the same row to have equal heights
+    $(this).equalHeight('.equalheight');
   });
 
 
@@ -38,11 +38,11 @@
     //~~~~~~~~~~~~~~~~~~~~
     // All Function Calls
     //~~~~~~~~~~~~~~~~~~~~
-    // Sets Elements in the same row to have equal heights
-    $(this).equalHeight('.equalheight');
     //Sets the featured work vars and runs the scroller
     $(this).featuredWorkScrollerSetVars();
     $(this).featuredWorkScroller();
+    // Sets Elements in the same row to have equal heights
+    $(this).equalHeight('.equalheight');
   });
 
 
